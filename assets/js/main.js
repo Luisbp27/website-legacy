@@ -6,7 +6,7 @@ const showMenu = (toggleId, navId) =>{
     // Validate that variables exist
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
-            // We add the show-menu class to the div tag with the nav__menu class
+            // We add the show-menu class to the div tag with the nav_menu class
             nav.classList.toggle('show-menu')
         })
     }
@@ -14,11 +14,11 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    // When we click on each nav_link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -35,9 +35,9 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
@@ -96,18 +96,18 @@ const sr = ScrollReveal({
     reset: true,
 });
 
-sr.reveal(`.home__data, .home__img, 
-           .decoration__data,
-           .accessory__content,
-           .footer__content`, {
+sr.reveal(`.home_data, .home_img, 
+           .aboutus_data,
+           .projects_content,
+           .footer_content`, {
     origin: 'top',
     interval: 200,
 })
 
-sr.reveal(`.share__img, .send__content`, {
+sr.reveal(`.association_img, .contactus_content`, {
     origin: 'left'
 })
 
-sr.reveal(`.share__data, .send__img`, {
+sr.reveal(`.association_data, .contactus_img`, {
     origin: 'right'
 })
