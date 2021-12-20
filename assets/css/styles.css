@@ -236,7 +236,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(218,37,53,.5);
+  background: #00F6ED;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -244,7 +244,7 @@ img{
 }
 
 .scrolltop:hover{
-  background-color: var(--first-color);
+  background-color: #00D6ED;
 }
 
 .scrolltop_icon{
@@ -263,7 +263,7 @@ img{
 }
 
 .home_img{
-  width: 250px;
+  max-width: 250px;
   justify-self: center;
 }
 
@@ -313,9 +313,9 @@ img{
 }
 
 .association_img{
-  width: 280px;
-  justify-self: center;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 
 /*========== FEATURES ==========*/
