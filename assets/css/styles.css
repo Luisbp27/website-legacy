@@ -303,16 +303,16 @@ img{
   color: var(--first-color-alt);
 }
 
-/*========== ACTIVITIES ==========*/
-.activities_data{
+/*========== ASSOCIATION ==========*/
+.association_data{
   text-align: center;
 }
 
-.activities_description{
+.association_description{
   margin-bottom: var(--mb-2);
 }
 
-.activities_img{
+.association_img{
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -469,8 +469,7 @@ img{
 
 /*========== ACTIVITIES.html ============*/
 .activities_title{
-  padding-top: 100px;
-  text-align: center;
+  padding-top: 50px;
 }
 
 .article_container{
@@ -488,8 +487,13 @@ section article{
   cursor: pointer;
 }
 
-.post h2, h4{
+.post h2{
   text-align: center;
+}
+
+.post h4{
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .post img{
@@ -560,21 +564,35 @@ section article h2, section article p{
 /* For full-screen images on small screens */
 @media screen and (max-width: 359px){
   .home_img,
-  .activities_img,
-  .contactus_img{
+  .association_img,
+  .contactus_img,
+  .article_container{
     width: 100%;
+  }
+
+  .article_container{
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .article_container{
+    width: 100%;
+    padding: 1rem;
   }
 }
 
 @media screen and (min-width: 576px){
   .home_container,
-  .activities_container,
-  .contactus_container{
+  .association_container,
+  .contactus_container,
+  .article_container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
   }
 
-  .home_container{
+  .home_container,
+  .article_container{
     padding: 5rem 0 0;
   }
 
@@ -583,18 +601,19 @@ section article h2, section article p{
   }
 
   .section-title-center,
-  .activities_data,
-  .contactus_description{
+  .association_data,
+  .contactus_description,
+  .article_container{
     text-align: initial;
   }
 
   .home_img,
-  .activities_img,
+  .association_img,
   .contactus_img{
     width: 100%;
   }
   
-  .activities_img{
+  .association_img{
     order: -1;
   }
 }
@@ -635,7 +654,7 @@ section article h2, section article p{
     padding: 7rem 2rem 0;
   }
 
-  .activities_container{
+  .association_container{
     padding: 0 2rem;
   }
 
@@ -666,7 +685,7 @@ section article h2, section article p{
   }
 
   .contactus_container{
-    background-color: var(--first-color-contactus);
+    background-color: var(--first-color);
     padding: 2rem;
     border-radius: 1.5rem;
   }
@@ -679,13 +698,13 @@ section article h2, section article p{
   }
 
   .home_img,
-  .activities_img,
+  .association_img,
   .contactus_img{
     width: 469px;
   }
 
   .home_container,
-  .activities_container,
+  .association_container,
   .contactus_container{
     column-gap: 5rem;
   }

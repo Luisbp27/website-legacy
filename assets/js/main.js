@@ -97,6 +97,8 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home_data, .home_img, 
+           .association,
+           .features,
            .aboutus_data,
            .projects_content,
            .footer_content`, {
@@ -108,6 +110,6 @@ sr.reveal(`.association_img, .contactus_content`, {
     origin: 'left'
 })
 
-sr.reveal(`.association_data, .contactus_img`, {
+sr.reveal(`.association_data, .contactus_img, features_data`, {
     origin: 'right'
 })
