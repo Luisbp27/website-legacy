@@ -479,12 +479,16 @@ img{
 
 section article{
   transition: box-shadow 0.3s ease-out;
-  background-color: #fff;
+  background-color: var(--container-color);
   margin: 1rem 0;
   box-shadow: 0 2px 6px rgba(65,11,16,.15);
   border-radius: 1rem;
   padding: 0.25rem 0;
   cursor: pointer;
+}
+
+section article:hover{
+  box-shadow: 0 0.1px 0.4px rgba(41, 7, 10, 0.15);
 }
 
 .post h2{
@@ -505,10 +509,6 @@ section article{
 
 article p{
  text-align: justify;
-}
-
-section article:hover{
-  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
 section article h2, section article p{
