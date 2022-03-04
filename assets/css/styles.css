@@ -462,9 +462,10 @@ img{
   font-family: var(--body-font);
 }
 
-.contactus_img{
-  width: 280px;
-  justify-self: center;
+.contactus_map{
+  width: 350px;
+  height: 288px;
+  border-radius: 5px;
 }
 
 /*========== ACTIVITIES.html ============*/
