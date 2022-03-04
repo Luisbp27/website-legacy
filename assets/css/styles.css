@@ -430,7 +430,7 @@ img{
 
 /*========== CONTACT US ==========*/
 .contactus{
-  background-color: var(--first-color-contactus);
+  background-color: var(--first-color);
 }
 
 .contactus_title, .contactus_description{
@@ -468,9 +468,6 @@ img{
 }
 
 /*========== ACTIVITIES.html ============*/
-.activities_title{
-  padding-top: 50px;
-}
 
 .article_container{
   width: 600px;
@@ -488,7 +485,7 @@ section article{
 }
 
 section article:hover{
-  box-shadow: 0 0.1px 0.4px rgba(41, 7, 10, 0.15);
+  box-shadow: 0 8px 16px rgba(41, 7, 10, 0.15);
 }
 
 .post h2{
