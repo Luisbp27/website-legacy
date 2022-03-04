@@ -463,9 +463,9 @@ img{
 }
 
 .contactus_map{
-  width: 350px;
-  height: 288px;
+  width: 80%;
   border-radius: 5px;
+  margin-left: 10%;
 }
 
 /*========== ACTIVITIES.html ============*/
